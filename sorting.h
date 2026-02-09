@@ -36,6 +36,8 @@ void selectionSort(int data[], int length)
     data[mi] = m;
     display(data, length);
   }
+
+  display(data, length);
   //cout << "\nSorted: ";
   // display(data,length);
 } 
