@@ -13,7 +13,7 @@ void display(int a[],int n)
 
   for(i=0;i<n;i++)
   {
-    std::cout<< std::setw(3) << a[i];
+    std::cout<< std::setw(5) << a[i];
   }
 	
   std::cout<<std::endl;
@@ -28,15 +28,16 @@ void selectionSort(int data[], int length)
     mi = i;
     for (j = i+1; j < length; j++)
     {
-      if (data[j] < data[mi]) { mi = j; }
+      if (data[j] > data[mi]) { mi = j; }
     }
 
     m = data[i];
     data[i] = data[mi];
     data[mi] = m;
+    display(data, length);
   }
   //cout << "\nSorted: ";
-  display(data,length);
+  // display(data,length);
 } 
 
 
