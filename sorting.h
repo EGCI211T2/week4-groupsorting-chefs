@@ -47,6 +47,7 @@ void selectionSort(int data[], int length)
 void insertionSort(int a[],int length)
 {
   int i, j, value;
+  display (a, length);
   for(i = 1; i < length; i++)
   {
     value = a[i];
@@ -58,7 +59,7 @@ void insertionSort(int a[],int length)
     display(a, length);
   }
   //cout << "\nSorted: ";
-  display(a, length);
+  
 }
 
 void swap(int &a,int &b)
@@ -71,6 +72,7 @@ void swap(int &a,int &b)
 
 void bubbleSort(int a[],int n)
 {
+  display(a,n);
   int i,j;
   for (i = 0; i < n-1 ; i++ ) 
   {
@@ -86,7 +88,7 @@ void bubbleSort(int a[],int n)
   }
 
   //cout << "\nSorted: ";
-  display(a,n);
+  
 }
 
 #endif
