@@ -50,15 +50,15 @@ void insertionSort(int a[],int length)
   for(i = 1; i < length; i++)
   {
     value = a[i];
-    for (j = i - 1; j >= 0 && a[j] > value; j--)
+    for (j = i - 1; j >= 0 && a[j] < value; j--)
     {
       a[j + 1] = a[j];
     }
     a[j + 1] = value;
-    display(a, i);
+    display(a, length);
   }
   //cout << "\nSorted: ";
-  display(a, i);
+  display(a, length);
 }
 
 void swap(int &a,int &b)
@@ -76,7 +76,7 @@ void bubbleSort(int a[],int n)
   {
     for (j = 0; j < n - i - 1 ; j++) 
 	  { 
-      if(a[j]>a[j+1])
+      if(a[j]<a[j+1])
       { 
         swap(a[j],a[j+1]);
       }
