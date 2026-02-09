@@ -55,6 +55,7 @@ void insertionSort(int a[],int length)
       a[j + 1] = a[j];
     }
     a[j + 1] = value;
+    display(a, i);
   }
   //cout << "\nSorted: ";
   display(a, i);
@@ -80,6 +81,8 @@ void bubbleSort(int a[],int n)
         swap(a[j],a[j+1]);
       }
     }
+
+    display(a,n);
   }
 
   //cout << "\nSorted: ";
