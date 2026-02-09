@@ -35,7 +35,7 @@ void selectionSort(int data[], int length)
     data[i] = data[mi];
     data[mi] = m;
   }
-  cout << "\nSorted: ";
+  //cout << "\nSorted: ";
   display(data,length);
 } 
 
@@ -53,7 +53,7 @@ void insertionSort(int a[],int length)
     }
     a[j + 1] = value;
   }
-  cout << "\nSorted: ";
+  //cout << "\nSorted: ";
   display(a, i);
 }
 
@@ -79,7 +79,7 @@ void bubbleSort(int a[],int n)
     }
   }
 
-  cout << "\nSorted: ";
+  //cout << "\nSorted: ";
   display(a,n);
 }
 
