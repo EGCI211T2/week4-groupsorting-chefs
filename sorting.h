@@ -17,7 +17,7 @@ void display(int a[],int n)
   }
 	
   std::cout<<std::endl;
-  
+  cout << endl;
 }
 
 void selectionSort(int data[], int length) 
