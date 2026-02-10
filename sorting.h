@@ -32,6 +32,7 @@ void selectionSort(int data[], int length)
     data[i] = data[mi];
     data[mi] = m;
     display(data, length);
+    cout << endl; //add newline to fit autotest
   }
 
   display(data, length);
