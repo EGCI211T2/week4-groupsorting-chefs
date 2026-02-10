@@ -75,18 +75,17 @@ void bubbleSort(int a[],int n)
   {
     for (j = 0; j < n - i - 1 ; j++) 
 	  { 
-      if(a[j]<a[j+1])
+      if(a[j] < a[j+1])
       { 
         swap(a[j],a[j+1]);
         display(a,n); // print after each swap
       }
     }
-
-    if(i < n - 2) //between passes only
-    {
-      cout << endl;
-      display(a,n);
-    }
+      if (i < n-2)  // only if another pass exists
+      {
+          cout << endl;
+          display(a,n);
+      }
   }
 
 }
