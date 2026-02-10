@@ -81,7 +81,9 @@ void bubbleSort(int a[],int n)
         display(a,n); // print after each swap
       }
     }
-    cout << endl; // to satisfy autotest
+
+    cout << endl;
+    display(a,n);
   }
 
 }
