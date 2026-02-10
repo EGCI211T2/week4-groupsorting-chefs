@@ -82,7 +82,7 @@ void bubbleSort(int a[],int n)
       }
     }
 
-    if(i != n - 2) //Check last pass so no repeat display
+    if(i < n - 2) //between passes only
     {
       cout << endl;
       display(a,n);
